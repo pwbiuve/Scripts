@@ -25,4 +25,8 @@ if [ -f /var/run/reboot-required ]; then
     echo -e $TEXT_RESET
 fi
 
-echo  > ~/.Scripts/upgradecheck
+echo  > ~/.Scripts/upgradecheck &
+
+nohup polybar top &
+sleep 2
+exit
