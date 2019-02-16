@@ -19,10 +19,4 @@ echo -e $TEXT_YELLOW
 echo 'auto remove finished...'
 echo -e $TEXT_RESET
 
-if [ -f /var/run/reboot-required ]; then
-    echo -e $TEXT_RED_B
-    echo 'Reboot required!'
-    echo -e $TEXT_RESET
-fi
-
-echo done > ~/.Scripts/upgradecheck &
+echo "done" > ~/.Scripts/upgradecheck 
