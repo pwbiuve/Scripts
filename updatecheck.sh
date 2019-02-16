@@ -1,7 +1,8 @@
 #!/bin/bash
 
 while true; do	
-echo start > ~/.Scripts/upgradecheck
+sleep 15
+echo none > ~/.Scripts/upgradecheck
 echo n | aptdcon --full-upgrade > ~/.Scripts/upgradecheck
-sleep 900
+sleep 435
 done
